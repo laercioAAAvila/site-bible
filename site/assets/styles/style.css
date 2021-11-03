@@ -3,14 +3,46 @@ body {
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+img {
+    max-height: 380px;
+    max-width: 380px;
 }
 .main {
+    margin: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    max-height: 100%;
 }
 nav a{
     text-decoration: none;
     color: black;
     text-transform: uppercase;
-
+    padding: 5px;
+}
+header {
+    display: flex;
+    width: 100%;
+    max-height: 100px;
+    background-color: rgb(184, 143, 238);
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: rgb(184, 143, 238);
+    width: 100%;
+    max-height: 100px;
+}
+footer p {
+    margin: 5px 0 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
